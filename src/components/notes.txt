@@ -1,0 +1,6 @@
+in callback functions, to access the inner function you must call them in the outer functionswhere needed.
+
+
+we can fetch info fron an api using fetch()
+when printing the results in api after asking for the data the printing comes before the request satisfaction hence an error
+this can be rectified by using async and await 
