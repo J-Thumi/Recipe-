@@ -68,14 +68,14 @@ const data=[
       "year": 1945
     }
   ]
-  
+
 function Search({FoodData,setFoodData}) {
 
 const [search,setSearch]=useState("pizza")
 
 useEffect(
     ()=>{
-        async function fetchData(){
+        //async function fetchData(){
 // const res = await fetch(`${URL}?query=${search}&apiKey=${API_KEY}`)
 // const data = await res.json()
 
@@ -86,8 +86,10 @@ setFoodData(data)
 // console.log(data.results)
 // setFoodData(data.results)
         }
-        fetchData()
-    },[search]
+        //fetchData()
+   // }
+    ,
+    [search]
 )
 
   return (
